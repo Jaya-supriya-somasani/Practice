@@ -14,4 +14,5 @@
     <string name="my_profile_tv">My profile</string>
     <string name="settings_tv">Settings</string>
     <string name="user_image_tv">User Image</string>
+    <string name="question_wise_analysis_tv">Question-wise Analysis</string>
 </resources>

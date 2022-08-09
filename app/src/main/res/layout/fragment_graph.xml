@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="correct"
+            type="int" />
+
+        <variable
+            name="skipped"
+            type="int" />
+
+        <variable
+            name="incorrect"
+            type="int" />
+
+        <variable
+            name="partial"
+            type="int" />
+
+        <variable
+            name="skippedNotVisited"
+            type="int" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <View
+            android:id="@+id/firstBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_button"
+            app:variable_weight="@{correct}" />
+
+        <View
+            android:id="@+id/secondBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/second_button"
+            app:variable_weight="@{skipped}" />
+
+        <View
+            android:id="@+id/thirdBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/third_button"
+            app:variable_weight="@{partial}" />
+
+        <View
+            android:id="@+id/fourthBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fourth_button"
+            app:variable_weight="@{skippedNotVisited}" />
+
+        <View
+            android:id="@+id/fifthBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/five_button"
+            app:variable_weight="@{incorrect}" />
+    </LinearLayout>
+</layout>

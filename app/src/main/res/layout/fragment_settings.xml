@@ -4,10 +4,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:background="#ff0000"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:padding="20dp">
 
-        <TextView
+        <include layout="@layout/fragment_graph"
+            app:correct="@{40}"
+            app:skipped="@{30}"
+            app:partial="@{30}"
+            app:skippedNotVisited="@{30}"
+            app:incorrect="@{20}"
+            />
+
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings_tv"
@@ -16,5 +25,73 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/headingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_wise_analysis_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <View
+            android:id="@+id/firstBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/first_button"
+            app:layout_constraintEnd_toStartOf="@id/secondBtn"
+            app:layout_constraintHorizontal_weight="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headingTv" />
+
+        <View
+            android:id="@+id/secondBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/second_button"
+            app:layout_constraintBottom_toBottomOf="@id/firstBtn"
+            app:layout_constraintEnd_toStartOf="@id/thirdBtn"
+            app:layout_constraintHorizontal_weight="8"
+            app:layout_constraintStart_toEndOf="@id/firstBtn"
+            app:layout_constraintTop_toTopOf="@id/firstBtn" />
+
+        <View
+            android:id="@+id/thirdBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/third_button"
+            app:layout_constraintBottom_toBottomOf="@id/firstBtn"
+            app:layout_constraintEnd_toStartOf="@id/fourthBtn"
+            app:layout_constraintHorizontal_weight="8"
+            app:layout_constraintStart_toEndOf="@id/secondBtn"
+            app:layout_constraintTop_toTopOf="@id/firstBtn" />
+
+        <View
+            android:id="@+id/fourthBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/fourth_button"
+            app:layout_constraintBottom_toBottomOf="@id/firstBtn"
+            app:layout_constraintEnd_toStartOf="@id/fifthBtn"
+            app:layout_constraintHorizontal_weight="8"
+            app:layout_constraintStart_toEndOf="@id/thirdBtn"
+            app:layout_constraintTop_toTopOf="@id/firstBtn" />
+
+        <View
+            android:id="@+id/fifthBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/five_button"
+            app:layout_constraintBottom_toBottomOf="@id/firstBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@id/fourthBtn"
+            app:layout_constraintTop_toTopOf="@id/firstBtn" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
