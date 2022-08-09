@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person"
+            android:title="@string/my_profile_tv" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_baseline_groups"
+            android:title="@string/people_tv" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings"
+            android:title="@string/settings_tv" />
+    </group>
+
+</menu>

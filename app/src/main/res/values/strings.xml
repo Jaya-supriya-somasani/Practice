@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="home_activity_tv">Home Activity</string>
+    <string name="user_1_tv">User 1</string>
+    <string name="home_page_tv">Home Page</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="profile_page_tv">Profile Page</string>
+    <string name="fadein_btn">FadeIn</string>
+    <string name="fadeout_btn">FadeOut</string>
+    <string name="people_tv">People</string>
+    <string name="my_profile_tv">My profile</string>
+    <string name="settings_tv">Settings</string>
+    <string name="user_image_tv">User Image</string>
+</resources>
